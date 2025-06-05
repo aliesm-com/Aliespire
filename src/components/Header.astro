@@ -1,0 +1,26 @@
+<header class="w-full flex flex-col sm:flex-row justify-center sm:justify-between md:justify-around items-center px-8 py-4 text-sm bg-base-100">
+  <!-- Left side navigation for larger screens -->
+  <div class="hidden sm:flex flex-row sm:flex-col gap-3 items-center">
+    <a href="#home" class="btn btn-outline btn-primary px-3 py-1 rounded-md">//01. &lt;Home/&gt;</a>
+    <a href="#about" onclick="soon_modal.showModal()" class="btn btn-ghost hover:btn-outline hover:btn-primary rounded-md">//02. &lt;About/&gt;</a>
+  </div>
+
+  <!-- Center logo -->
+  <div class="text-xl font-bold tracking-widest">
+    <span class="orbitron">Ali Esmaeili</span>
+  </div>
+
+  <!-- Right side navigation for larger screens -->
+  <div class="hidden sm:flex flex-row sm:flex-col gap-3 items-center">
+    <a href="https://aliesm-com.medium.com/" class="btn btn-ghost hover:btn-primary rounded-md">//03. &lt;Posts/&gt;</a>
+    <a href="#footer" class="btn btn-ghost hover:btn-primary rounded-md">//04. &lt;Contact/&gt;</a>
+  </div>
+
+  <!-- Mobile dock navigation -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 bg-base-100 flex justify-around py-2">
+    <a href="#home" class="btn btn-outline btn-primary rounded-md">Home</a>
+    <a href="#about" onclick="soon_modal.showModal()" class="btn btn-ghost hover:btn-outline hover:btn-primary rounded-md">About</a>
+    <a href="https://aliesm-com.medium.com/" class="btn btn-ghost hover:btn-primary rounded-md">Posts</a>
+    <a href="#footer" class="btn btn-ghost hover:btn-primary rounded-md">Contact</a>
+  </div>
+</header>

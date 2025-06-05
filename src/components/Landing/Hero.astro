@@ -1,0 +1,28 @@
+---
+import SoonModal from './SoonModal.astro';
+---
+
+<div class="relative w-64 h-64 mx-auto my-16">
+  <!-- orbit lines -->
+  <div class="absolute inset-0 rounded-full border border-white/20"></div>
+  <div class="absolute inset-[10px] rounded-full border border-white/20"></div>
+  <div class="absolute inset-[20px] rounded-full border border-white/20"></div>
+
+  <!-- center content -->
+  <button class="cursor-pointer hover:scale-110 transition-all duration-300 absolute inset-0 flex items-center justify-center text-green-400 font-mono" onclick="soon_modal.showModal()">
+    &lt;Download CV/&gt;
+  </button>
+  <SoonModal />
+
+  <!-- orbiting dot 1 (outer circle, clockwise, no delay) -->
+  <div class="absolute left-1/2 top-0 w-2 h-2 bg-primary rounded-full spin-right delay-1"
+       style="transform-origin: center 130px;"></div>
+
+  <!-- orbiting dot 2 (middle circle, counter-clockwise, delay) -->
+  <div class="absolute left-1/2 top-0 w-2 h-2 bg-info rounded-full spin-left delay-2"
+       style="transform-origin: center 125px;"></div>
+
+  <!-- orbiting dot 3 (inner circle, clockwise, more delay) -->
+  <div class="absolute left-1/2 top-0 w-2 h-2 bg-warning rounded-full spin-right delay-3"
+       style="transform-origin: center 120px;"></div>
+</div>
